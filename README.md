@@ -1,1 +1,3 @@
-# primouomo123.github.io
+# Personal Website
+
+This is my website where I will be uploading my projects. All projects are linked to my GitHub repos.
