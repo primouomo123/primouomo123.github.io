@@ -36,7 +36,8 @@ header h1 {
 }
 
 .main-content {
-    padding-top: 14em;
+    margin-top: 13em;
+    padding-top: 1em;
     background-color: rgb(243, 244, 246);
 }
 
@@ -141,7 +142,8 @@ Also, I wanted to practice more about Flexbox Layout */
     transform: scale(1.05);
 }
 
-/* This is to make just 1 column when the max-width of a screen is 768px */
+/* This is to make just 1 column when the max-width of a screen is 768px. Just a way to practice media queries because I had already made
+the Grid Layout fully responsive. */
 @media (max-width: 768px) {
     .project-container {
     grid-template-columns: repeat(1, minmax(250px, 1fr));
