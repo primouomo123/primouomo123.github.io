@@ -1,3 +1,10 @@
+/* Since I have a fixed header, thi helps in getting the sections the user clicks on the navbar 10em before the actual content.
+Without it, the actual section to be sent to would be overlapped */
+html {
+    scroll-padding-top: 10em;
+}
+
+/* This is the style for the Header Section */
 header {
     background-color: black;
     color: white;
@@ -11,56 +18,69 @@ header {
     z-index: 1000;
 }
 
+/* I made the h1 element be bold */
 header h1 {
     font-weight: bold;
 }
 
+/* Style for the nav element within the Header Section */
 .navbar {
     font-size: 1.2em;
     padding: 1em;
     width: 100%;
 }
+
+/* I've removed the bullets in this unordered list and also eliminated the default margin and padding to the list */
 .navbar ul {
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
+
+/* I've displayed the list to be shown as inline elements */
 .navbar ul li {
     display: inline;
     margin: 0 1em;
 }
 
+/* CHanged the color of the a elements to white, so it can be read more clearly in the header */
 .navbar a {
     color: white;
 }
 
+/* This is the style for the main content of the page */
 .main-content {
     margin-top: 13em;
     padding-top: 1em;
     background-color: rgb(243, 244, 246);
 }
 
+/* I've added vertical and horizontal padding to the section elements within the main content */
 .main-content section {
     padding: 2em 1em;
 }
 
+/* margin-bottom only for the about me section */
 .main-content #about-me {
     margin-bottom: 0.5em;
 }
 
+/* Style for the h2 element within the about me section */
 .main-content #about-me h2 {
     font-size: 2em;
     font-family: bold;
     text-align: center;
 }
 
+/* Style for the p element within the about me section */
 .main-content #about-me p {
     font-size: 1.2em;
     color: #666;
     text-align: justify;
 }
 
+/* Style for the h3 element within the about me section */
 .main-content #about-me h3 {
     font-size: 1.3em;
     text-align: center;
@@ -75,15 +95,18 @@ Also, I wanted to practice more about Flexbox Layout */
     padding: 2em;
 }
 
+/* Style for rhe ol element within the about me section */
 .main-content #about-me ol {
     font-size: 1.3em;
     color: #666;
 }
 
+/* margin-bottom only for the projects section */
 #project-showcase {
     margin-bottom: 0.5em;
 }
 
+/* Style only for the h2 element inside the projects section */
 #project-showcase h2 {
     font-size: 2em;
     text-align: center;
@@ -102,6 +125,7 @@ Also, I wanted to practice more about Flexbox Layout */
     padding: 1em;
 }
 
+/* Style for all the project boxes */
 .project {
     background-color: #fff;
     border: 1px solid #ddd;
@@ -110,15 +134,17 @@ Also, I wanted to practice more about Flexbox Layout */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     box-sizing: border-box;
-    transition: transform 0.3s;
+    transition: transform 0.3s; /* This is used for the hover effect later in this code */
 }
 
+/* Style for the image in every project */
 .project img {
     width: 100%;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
 }
 
+/* Style for the h3 element in every project */
 #project-showcase .project-container .project h3 {
     font-weight: bold;
     margin-bottom: 0.5em;
@@ -126,6 +152,7 @@ Also, I wanted to practice more about Flexbox Layout */
     font-size: 2em;
 }
 
+/* Style for the p element in every project */
 #project-showcase .project-container .project p {
     margin-bottom: 0.5em;
     color: #666;
@@ -133,11 +160,13 @@ Also, I wanted to practice more about Flexbox Layout */
     font-size: 1.5em;
 }
 
+/* This is to center the a element in every project */
 #project-showcase .project-container .project a {
     display: block; /* I've changed this element to be displayed as block, so I can align the text to the center. */
     text-align: center;
 }
 
+/* This is to enlarge every project 5% more of its actual size when hovering the mouse over */
 .project:hover {
     transform: scale(1.05);
 }
