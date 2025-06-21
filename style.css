@@ -65,6 +65,8 @@ header h1 {
     text-align: center;
 }
 
+/* I've made My Skills section within About Me Section to be displayed as Flexbox, so I can show it the way I wanted.
+Also, I wanted to practice more about Flexbox Layout */
 .main-content #about-me .skills {
     display: flex;
     flex-wrap: wrap;
@@ -86,8 +88,13 @@ header h1 {
     text-align: center;
 }
 
+/* The project container is displayed as a Grid Layout, as requested in this Lab */
 .project-container {
     display: grid;
+    /* Below, I've used repeat in order to repeat the column definition.
+    Autofit automatically fits as many columns as possible in the row, based on available space.
+    and minmax(250px, 1fr) makes each column be at least 250px wide, but can grow up to take one fractional unit ofavailable space
+    (sharing it equally with other columns). All of this is to make this section be as responsive as possible*/
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 1em;
     align-content: space-around;
@@ -126,7 +133,7 @@ header h1 {
 }
 
 #project-showcase .project-container .project a {
-    display: block;
+    display: block; /* I've changed this element to be displayed as block, so I can align the text to the center. */
     text-align: center;
 }
 
