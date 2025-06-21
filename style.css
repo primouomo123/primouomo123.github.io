@@ -1,5 +1,6 @@
 header {
-    background-color: rgb(202, 165, 116);
+    background-color: black;
+    color: white;
     font-size: 1.2em;
     padding: 1em;
     margin-bottom: 1em;
@@ -31,7 +32,7 @@ header h1 {
 }
 
 .navbar a {
-    color: black;
+    color: white;
 }
 
 .main-content {
@@ -57,6 +58,23 @@ header h1 {
     font-size: 1.2em;
     color: #666;
     text-align: justify;
+}
+
+.main-content #about-me h3 {
+    font-size: 1.3em;
+    text-align: center;
+}
+
+.main-content #about-me .skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 2em;
+}
+
+.main-content #about-me ol {
+    font-size: 1.3em;
+    color: #666;
 }
 
 #project-showcase {
